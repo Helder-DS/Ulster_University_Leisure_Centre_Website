@@ -1,0 +1,364 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the main content wrapper */
+.div1 {
+    margin: 0 auto;
+    width: 1400px;
+    background-color: rgb(246, 242, 242);   
+}
+
+.nav-button:hover {
+    /* Styles for the buttons when hovered */
+    background-color: rgb(5, 5, 112);
+    color: #fff;
+}
+
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(246, 242, 242);
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 0 20px; /* Add padding to give some space around the elements */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin-right: 10px; /* Adjust the spacing between list items */
+}
+
+.nav-text {
+    color: rgb(66, 65, 65);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-space {
+    flex: 1; /* Use remaining space */
+}
+
+.btn1 {
+    font-size: 12px;
+}
+
+.btn2 {
+    font-size: 17px;
+}
+
+.btn3 {
+    font-size: 22px;
+}
+
+.btn4 img {
+    width: 25px; /* Adjust the width of the image */
+    height: 25px; /* Adjust the height of the image */
+}
+
+.btn5 img {
+    width: 35px; /* Adjust the width of the image */
+    height: 30px; /* Adjust the height of the image */
+}
+
+.btn6 img {
+    width: 45px; /* Adjust the width of the image */
+    height: 45px; /* Adjust the height of the image */
+}
+
+.btn4, .btn5, .btn6 {
+    font-size: 22px;
+    background-color: black;
+}
+/*-------------------------------------------*/
+.div2{
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 0 20px; /* Add padding to give some space around the elements */
+}
+
+.logo_title {
+    margin: 0 auto;
+    width: 1400px;
+    height: 100%;
+    background-color: white;   
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+
+
+.Ulster_Logo {
+    width: 150px;
+    height: 150px;
+}
+
+.text-container {
+    margin-left: 10px; /* Adjust the spacing between the image and text */
+}
+
+.text-container p {
+    margin: 0; /* Remove default margin */
+    font-family: Book Antiqua;
+    color: rgb(5, 5, 112);
+    font-size: 35px;
+}
+
+/*--------------------------------------------------------------------*/
+.div3{
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(76, 75, 75);
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center;
+        padding: 0 20px; /* Add padding to give some space around the elements */
+}
+
+.nav-links{
+    margin: 0 auto;
+    width: 1400px;
+    height: 100%;
+    background-color: rgb(76, 75, 75);   
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.nav-links li a:hover {
+    text-decoration: underline; /* Underline the text when hovered */
+}
+
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+    padding: 0 20px; /* Add space around each link */
+    font-size: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+
+.div4{
+    width: 100%;
+    height: 900px;
+    background-color: white;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 0 20px; /* Add padding to give some space around the elements */
+}
+
+.Registration-box{
+    max-width: 720px;
+    width: 100%;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: 1px solid grey;
+
+
+}
+
+.Registration-box .title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.Registration-box form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box,
+.radio-box,
+.gender-dropdown-box {
+    width: calc(50% - 10px);
+    margin-bottom: 15px;
+}
+
+.user-details .input-box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/*size of the input box */
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.user-message input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 16px;
+    padding: 25px 50px 200px 15px;
+}
+
+.button-box button {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+}
+
+.user-message .input-box {
+    margin-bottom: 25px;
+}
+
+/* Add this style for the gender dropdown */
+.gender-dropdown-box select {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.gender-dropdown-box .gender-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Adjusted style for the radio box and gender dropdown box */
+.radio-box {
+    display: inline-block;
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+
+}
+
+/* Adjusted style for the radio title */
+.radio-title,
+.gender-title {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Adjusted style for radio buttons */
+.radio-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.title{
+    text-decoration: underline black;
+}
+
+.user-message textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical; 
+    outline: none; /* Remove the black highlight on focus */
+}
+
+.user-message textarea::placeholder {
+    font-size: 16px; /* Match the font size of the input boxes */
+    font-family: Arial, sans-serif; /* Use Arial or a similar professional font */
+}
+
+.div7{
+    width: 100%;
+    margin-top: 60px;
+    height: 200px;
+    font-size: 10px;
+    background-color: rgb(76, 75, 75);
+    /*align-items: center;*/
+    justify-content: center;    
+    display: flex;
+}
+
+.address{
+    margin-top: 20px;
+    width: 1400px;
+    height: 100%px;
+    /*background-color: red;*/
+}
+
+.address h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.address li {
+    font-size: 17px;
+    color: white;
+}
+
+.address ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+

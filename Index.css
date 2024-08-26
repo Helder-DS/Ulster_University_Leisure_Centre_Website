@@ -1,0 +1,347 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the main content wrapper */
+.div1 {
+    margin: 0 auto;
+    width: 1400px;
+    background-color: rgb(246, 242, 242);   
+}
+
+.nav-button:hover {
+    /* Styles for the buttons when hovered */
+    background-color: rgb(5, 5, 112);
+    color: #fff;
+}
+
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(246, 242, 242);
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 0 20px; /* Add padding to give some space around the elements */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin-right: 10px; /* Adjust the spacing between list items */
+}
+
+.nav-text {
+    color: rgb(66, 65, 65);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-space {
+    flex: 1; /* Use remaining space */
+}
+
+.btn1 {
+    font-size: 12px;
+}
+
+.btn2 {
+    font-size: 17px;
+}
+
+.btn3 {
+    font-size: 22px;
+}
+
+.btn4 img {
+    width: 25px; /* Adjust the width of the image */
+    height: 25px; /* Adjust the height of the image */
+}
+
+.btn5 img {
+    width: 35px; /* Adjust the width of the image */
+    height: 30px; /* Adjust the height of the image */
+}
+
+.btn6 img {
+    width: 45px; /* Adjust the width of the image */
+    height: 45px; /* Adjust the height of the image */
+}
+
+.btn4, .btn5, .btn6 {
+    font-size: 22px;
+    background-color: black;
+}
+/*-------------------------------------------*/
+.div2{
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 0 20px; /* Add padding to give some space around the elements */
+}
+
+.logo_title {
+    margin: 0 auto;
+    width: 1400px;
+    height: 100%;
+    background-color: white;   
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+
+
+.Ulster_Logo {
+    width: 150px;
+    height: 150px;
+}
+
+.text-container {
+    margin-left: 10px; /* Adjust the spacing between the image and text */
+}
+
+.text-container p {
+    margin: 0; /* Remove default margin */
+    font-family: Book Antiqua;
+    color: rgb(5, 5, 112);
+    font-size: 35px;
+}
+
+/*--------------------------------------------------------------------*/
+.div3{
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        background-color:  rgb(72, 71, 71);
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center;
+        padding: 0 20px; /* Add padding to give some space around the elements */
+}
+
+.nav-links{
+    margin: 0 auto;
+    width: 1400px;
+    height: 100%;
+    background-color: rgb(72, 71, 71);   
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+
+.nav-links li a:hover {
+    text-decoration: underline; /* Underline the text when hovered */
+}
+
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+    padding: 0 20px; /* Add space around each link */
+    font-size: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+.div4 {
+    width: 100%;
+    height: 350px;
+    background-color: red;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+
+.div4 img {
+    width: 100%; /* Stretch the image to match the width of div4 */
+    max-width: 100%;
+    height: 100%; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of div4 */
+}
+
+/*----------------------------------------------------------------------*/
+.div5 {
+    margin-top: 30px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+
+.information{
+    margin: 0 auto;
+    width: 1400px;
+    height: 100%;
+    background-color: white;   
+    display: flex;
+}
+
+.information, a{
+    font-size: 30px;
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+.div6 {
+    margin-top: 40px;
+    width: 100%;
+    height: 700x; /* Adjust height as needed */
+    background-color: white; /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.outer-box {
+    width: 1600px;
+    height: 100%;
+    background-color: white;
+    text-align: center; /* Center align the boxes horizontally */
+    
+}
+
+.box {
+    width: 460px; /* Width of the box */
+    height: 200px; /* Height of the box */
+    display: inline-block;
+    border: solid 1px;
+    border-color: rgb(165, 164, 164);
+    overflow: hidden;
+    margin: 0 10px; /* Adjust margin between boxes */
+    margin-top: 20px;
+    background-color: white;
+    vertical-align: top; /* Align boxes from the top */
+    border-radius: 1%;
+}
+
+.box a{
+    text-decoration: none;
+    color: black;
+}
+
+.box:hover {
+    border-color: rgb(5, 5, 112); /* Change border color on hover */
+}
+
+.box-img {
+    width: 30%; /* Width of the image */
+    float: left; /* Float the image div to the left */
+    height: 100%; /* Ensure image div takes full height */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.box-img img {
+    max-width: 80%; /* Ensure image takes full width of box-img */
+    max-height: 80%; /* Ensure image takes full height of box-img */
+}
+
+.box-info {
+    width: 65%; /* Width of the info section */
+    float: left; /* Float the info div to the left */
+    height: 100%; /* Ensure info div takes full height */
+    margin-top: 35px;
+    text-align: justify;
+}
+
+
+.box-info h2 {
+    margin-top: 0;
+    color: rgb(5, 5, 112);
+    text-align: left;
+    font-size: 25px;
+}
+
+.box-info p {
+    margin-bottom: 0;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/*------------------------------------------------------------------*/
+
+.div7{
+    width: 100%;
+    margin-top: 60px;
+    height: 200px;
+    font-size: 10px;
+    background-color: rgb(76, 75, 75);
+    /*align-items: center;*/
+    justify-content: center;    
+    display: flex;
+}
+
+.address{
+    margin-top: 20px;
+    width: 1400px;
+    height: 100%px;
+    /*background-color: red;*/
+}
+
+.address h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.address li {
+    font-size: 17px;
+    color: white;
+}
+
+.address ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+
+
+
+
+

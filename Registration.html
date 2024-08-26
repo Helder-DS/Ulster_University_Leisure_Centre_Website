@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!--CSS and Javascript links-->
+    <link rel="stylesheet" href="Registration.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Registration.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="div1">
+            <ul class="nav-list">
+                <li class="nav-text">Text Size</li>
+                <li><button class="nav-button btn1" type="button">Aa</button></li>
+                <li><button class="nav-button btn2" type="button">Aa</button></li>
+                <li><button class="nav-button btn3" type="button">Aa</button></li>
+                <li class="nav-space"></li><!-- Empty list item for spacing -->
+                
+                <li>
+                    <a href="https://www.facebook.com/ulsteruniversity/" target="">
+                        <button class="nav-button btn4" type="button">
+                            <img src="IMG\Facebook.png" alt="Image 4">
+                        </button>
+                    </a>
+                </li>
+                
+
+
+                <li>
+                    <a href="https://www.instagram.com/ulsteruni/" target="">
+                        <button class="nav-button btn5" type="button">
+                             <img src="IMG\Instragram.png" alt="Image 5">
+                        </button>
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="https://twitter.com/ulsteruni" target="">
+                        <button class="nav-button btn6" type="button">
+                            <img src="IMG\Twitter.png" alt="Image 6">
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+
+    <!------------------------------------------------------------------>
+
+    <div class="div2">
+        <div class="logo_title">
+            <img class="Ulster_Logo" src="IMG/Ulster_Logo.jpg" alt="Image Description">
+            <div class="text-container">
+                <p>Ulster University </p>
+                <p>Lesuire Centre</p>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------->
+
+    <div class="div3">
+        <div class="nav-links">
+            <ul>
+                <li><a href="Registration.html">Register Now</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------->
+
+    <div class="div4">
+        <div class="Registration-box">
+            <div class="title">Register Now</div>
+            <form action="#">
+                <div class="user-details">
+                    <!--Titles-->
+                    <div class="radio-box">
+                        <span class="radio-title">Title</span>
+                        <div class="radio-buttons">
+                            <label>
+                                <input type="radio" id="radio-info" name="title" value="Mr"> Mr
+                            </label>
+                            <label>
+                                <input type="radio" id="radio-info" name="title" value="Mrs"> Mrs
+                            </label>
+                            <label>
+                                <input type="radio" id="radio-info" name="title" value="Miss"> Miss
+                            </label>
+                            <label>
+                                <input type="radio" id="radio-info" name="title" value="Dr"> Dr
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <!---------------------------------------->
+
+                     <!-- Gender dropdown -->
+                <div class="gender-dropdown-box">
+                    <span class="gender-title">Gender</span>
+                    <select id="gender-dropdown" name="gender-dropdown" required>
+                         <option value="" disabled selected>Select Gender</option>
+                         <option value="male">Male</option>
+                         <option value="female">Female</option>
+                         <option value="other">Other</option>
+                    </select>
+                </div>
+
+                  <!-- First name div -->
+                  <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" id="firstName" placeholder="Enter Name" required>
+                </div>
+
+                <!-- Last name div -->
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" id="lastName" placeholder="Enter Last name" required>
+                </div>
+
+                <!-- Address name div -->
+                <div class="input-box">
+                    <span class="details">Address</span>
+                    <input type="text" id="address" placeholder="Enter Address" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Postcode</span>
+                    <input type="text" id="postcode" placeholder="Enter Postcode" required>
+                </div>
+
+             <!-- Phone number div -->
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" id="phoneNumber" placeholder="Enter Phone Number" required>
+                </div>
+
+                <!-- Address div -->
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" id="email" placeholder="Enter Email" required>
+                </div>
+            </div>
+
+                <!-- message div -->
+            <div class="user-message">
+                <div class="input-box">
+                    <label for="message" class="details">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+                </div>
+            </div>
+
+                 <!-- submit button div -->
+            <div class="button-box">
+                <button type="submit" onclick="validateForm()">Submit</button>
+            </div>
+
+            </form>
+            
+        </div>
+    </div>
+
+    <!-------------------------------------------------------->
+    <div class="div7">
+        <div class="address">
+            <h1>Belfast Office</h1>
+            <ul>
+                <li>York St, Belfast</li>
+                <li>BT15 1ED</li>
+                <li>028 7012 3456</li>
+                <li>UlsterUniversityBelfast.ac.uk</li>
+            </ul>
+        </div>
+
+    
+   
+    
+</body>
+</html>
