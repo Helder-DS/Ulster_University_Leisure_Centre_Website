@@ -187,9 +187,7 @@ function validateForm() {
 
     // Check if any field has custom validity set (i.e., validation failed)
     // If any field has failed validation, set validForm to false
-    if (document.getElementById("title").validity.customError ||
-        document.getElementById("gender-dropdown").validity.customError ||
-        document.getElementById("firstName").validity.customError ||
+    if (document.getElementById("firstName").validity.customError ||
         document.getElementById("lastName").validity.customError ||
         document.getElementById("address").validity.customError ||
         document.getElementById("postcode").validity.customError ||
