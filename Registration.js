@@ -172,7 +172,9 @@ function validateMessage() {
 
 // Function to validate the entire form
 function validateForm() {
-    // Call individual validation functions
+    let validForm = true; // Initialize a flag to track form validity
+
+    // Call individual validation functions and check if they pass
     validateTitle();
     validateGender();
     validateFirstName();
@@ -183,12 +185,29 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
-   
-   //document.getElementById("myForm").submit();
-   document.getElementById("myForm");
-   alert("Registration complete");
+    // Check if any field has custom validity set (i.e., validation failed)
+    // If any field has failed validation, set validForm to false
+    if (document.getElementById("title").validity.customError ||
+        document.getElementById("gender-dropdown").validity.customError ||
+        document.getElementById("firstName").validity.customError ||
+        document.getElementById("lastName").validity.customError ||
+        document.getElementById("address").validity.customError ||
+        document.getElementById("postcode").validity.customError ||
+        document.getElementById("phoneNumber").validity.customError ||
+        document.getElementById("email").validity.customError ||
+        document.getElementById("message").validity.customError) {
+        validForm = false;
+    }
 
+    // If the form is valid, show the "Registration complete" alert and submit the form
+    if (validForm) {
+        alert("Registration complete");
+        document.getElementById("myForm").submit(); // Submit the form if valid
+    } else {
+        // Optionally, you can handle failed validations here (e.g., display error messages)
+    }
 }
+
 
 
   
