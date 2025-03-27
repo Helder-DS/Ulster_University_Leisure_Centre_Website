@@ -162,8 +162,8 @@ function validateMessage() {
     // Validate the message based on various conditions
     if (messageValue === "") {
         messageTextarea.setCustomValidity("Please enter your message.");
-    } else if (messageValue.length > 500) {
-        messageTextarea.setCustomValidity("Message cannot exceed 500 characters.");
+    } else if (messageValue.length > 250) {
+        messageTextarea.setCustomValidity("Message cannot exceed 250 characters.");
     } else {
         messageTextarea.setCustomValidity(""); // Clear custom validity
     }
