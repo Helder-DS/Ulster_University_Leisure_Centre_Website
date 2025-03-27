@@ -185,9 +185,11 @@ function validateForm() {
     validateMessage();
 
 
-    document.getElementById("myForm").submit();
-
-    alert("Message sent");
+      // If there are no validation errors (all custom validity is cleared)
+      if (document.querySelectorAll('input:invalid, select:invalid, textarea:invalid').length === 0) {
+        // Redirect to index.html after successful validation
+        window.location.href = "index.html";  // Redirects to home page
+    }
 
 
 }
