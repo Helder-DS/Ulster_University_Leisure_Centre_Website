@@ -172,8 +172,6 @@ function validateMessage() {
 
 // Function to validate the entire form
 function validateForm() {
-    let validForm = true; // Initialize a flag to track form validity
-
     // Call individual validation functions
     validateTitle();
     validateGender();
@@ -185,36 +183,12 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
-    // Log custom errors for debugging
-    console.log("First Name Validity:", document.getElementById("firstName").validity.customError);
-    console.log("Last Name Validity:", document.getElementById("lastName").validity.customError);
-    console.log("Address Validity:", document.getElementById("address").validity.customError);
-    console.log("Postcode Validity:", document.getElementById("postcode").validity.customError);
-    console.log("Phone Number Validity:", document.getElementById("phoneNumber").validity.customError);
-    console.log("Email Validity:", document.getElementById("email").validity.customError);
-    console.log("Message Validity:", document.getElementById("message").validity.customError);
+   
+   //document.getElementById("myForm").submit();
+   document.getElementById("myForm");
+   alert("Registration complete");
 
-    // Check if any field has custom validity set (i.e., validation failed)
-    if (document.getElementById("firstName").validity.customError ||
-        document.getElementById("lastName").validity.customError ||
-        document.getElementById("address").validity.customError ||
-        document.getElementById("postcode").validity.customError ||
-        document.getElementById("phoneNumber").validity.customError ||
-        document.getElementById("email").validity.customError ||
-        document.getElementById("message").validity.customError) {
-        validForm = false;
-    }
-
-    // If the form is valid, show the "Registration complete" alert
-    if (validForm) {
-        console.log("Form is valid.");
-        alert("Registration complete");
-    } else {
-        console.log("Form is invalid.");
-    }
 }
-
-
 
 
   
