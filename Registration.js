@@ -184,9 +184,9 @@ function validateForm(event) {
     validateEmail();
     validateMessage();
 
-    // If the form passes validation, redirect to the success page
+    // If the form passes validation, submit the form
     if (isFormValid()) {
-        window.location.href = "registration-successful.html";  // This will redirect to the success page
+        document.querySelector("form").submit();  // Submit the form manually
     }
 }
 
