@@ -170,7 +170,6 @@ function validateMessage() {
 
 }
 
-// Function to validate the entire form
 function validateForm() {
     // Call individual validation functions
     validateTitle();
@@ -183,29 +182,17 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
-    // // Check if there are any invalid fields (using custom validity)
-    // if (document.querySelectorAll(':invalid').length > 0) {
-    //    // alert("Please fix the highlighted errors.");
-    //     return false; // Don't proceed further if invalid fields exist
-    // }
-
-    // Check if there are any invalid fields (using custom validity)
-    if (document.querySelectorAll(':invalid').length = 0) {
-        window.location.href = "Registration_Successful.html";
-     }
-
+    // Trigger validation on all fields to ensure highlighting and error messages appear
+    var form = document.getElementById("myForm"); // Assuming your form has id="myForm"
     
+    // Triggering reportValidity() on the form will show error messages and highlight invalid fields
+    if (!form.reportValidity()) {
+        return false; // If any field is invalid, prevent form submission
+    }
 
-    // If everything is valid, you can redirect or show success message
-    //window.location.href = "Registration_Successful.html";
-
-   
-   
-
+    // If everything is valid, you can redirect or show a success message
+    window.location.href = "Registration_Successful.html";
 }
-
-
-  
 
 
 /**
