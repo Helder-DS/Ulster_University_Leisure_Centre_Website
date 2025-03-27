@@ -202,7 +202,7 @@ function validateForm() {
     // If the form is valid, show the "Registration complete" alert and submit the form
     if (validForm) {
         alert("Registration complete");
-        document.getElementById("myForm").submit(); // Submit the form if valid
+        //document.getElementById("myForm").submit(); // Submit the form if valid
     } else {
         // Optionally, you can handle failed validations here (e.g., display error messages)
     }
