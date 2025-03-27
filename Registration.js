@@ -183,14 +183,16 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
-    alert("Message sent")
+  
 
 
 
 }
 
 document.getElementById("myForm").submit();
+  alert("Message sent");
 
+  
 /**
  * JQury functions to increase or decrease size text for accessability
  */
