@@ -184,14 +184,14 @@ function validateForm() {
     validateMessage();
 
     document.getElementById("myForm").submit();
-
+    alert("Registration Complete");
 
 
 }
 
 
   
-alert("Registration Complete");
+
 
 /**
  * JQury functions to increase or decrease size text for accessability
