@@ -190,7 +190,7 @@ function validateForm() {
     }
 
     // If everything is valid, you can redirect or show success message
-    window.location.href = "registration_success.html";
+    window.location.href = "Registration_Successful.html";
 
    
    
