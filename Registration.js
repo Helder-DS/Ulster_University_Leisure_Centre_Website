@@ -174,7 +174,7 @@ function validateMessage() {
 function validateForm() {
     let validForm = true; // Initialize a flag to track form validity
 
-    // Call individual validation functions and check if they pass
+    // Call individual validation functions
     validateTitle();
     validateGender();
     validateFirstName();
@@ -185,8 +185,16 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
+    // Log custom errors for debugging
+    console.log("First Name Validity:", document.getElementById("firstName").validity.customError);
+    console.log("Last Name Validity:", document.getElementById("lastName").validity.customError);
+    console.log("Address Validity:", document.getElementById("address").validity.customError);
+    console.log("Postcode Validity:", document.getElementById("postcode").validity.customError);
+    console.log("Phone Number Validity:", document.getElementById("phoneNumber").validity.customError);
+    console.log("Email Validity:", document.getElementById("email").validity.customError);
+    console.log("Message Validity:", document.getElementById("message").validity.customError);
+
     // Check if any field has custom validity set (i.e., validation failed)
-    // If any field has failed validation, set validForm to false
     if (document.getElementById("firstName").validity.customError ||
         document.getElementById("lastName").validity.customError ||
         document.getElementById("address").validity.customError ||
@@ -197,14 +205,15 @@ function validateForm() {
         validForm = false;
     }
 
-    // If the form is valid, show the "Registration complete" alert and submit the form
+    // If the form is valid, show the "Registration complete" alert
     if (validForm) {
+        console.log("Form is valid.");
         alert("Registration complete");
-        //document.getElementById("myForm").submit(); // Submit the form if valid
     } else {
-        // Optionally, you can handle failed validations here (e.g., display error messages)
+        console.log("Form is invalid.");
     }
 }
+
 
 
 
