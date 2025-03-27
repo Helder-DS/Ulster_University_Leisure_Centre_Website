@@ -170,10 +170,9 @@ function validateMessage() {
 
 }
 
-function validateForm(event) {
-    event.preventDefault();  // Prevent the default form submission
-
-    // Perform all individual validation checks
+// Function to validate the entire form
+function validateForm() {
+    // Call individual validation functions
     validateTitle();
     validateGender();
     validateFirstName();
@@ -184,13 +183,22 @@ function validateForm(event) {
     validateEmail();
     validateMessage();
 
-    // If the form passes validation, submit the form
-    if (isFormValid()) {
-        document.querySelector("form").submit();  // Submit the form manually
+    // Check if there are any invalid fields (using custom validity)
+    if (document.querySelectorAll(':invalid').length > 0) {
+        alert("Please fix the highlighted errors.");
+        return false; // Don't proceed further if invalid fields exist
     }
+
+    // If everything is valid, you can redirect or show success message
+    window.location.href = "registration_success.html";
+
+   
+   
+
 }
 
 
+  
 
 
 /**
