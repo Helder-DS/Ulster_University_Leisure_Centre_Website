@@ -182,17 +182,19 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
-    // Trigger validation on all fields to ensure highlighting and error messages appear
-    var form = document.getElementById("myForm"); // Assuming your form has id="myForm"
-    
-    // Triggering reportValidity() on the form will show error messages and highlight invalid fields
-    if (!form.reportValidity()) {
-        return false; // If any field is invalid, prevent form submission
+    // Get the form element
+    var form = document.getElementById("myForm");
+
+    // This will force validation messages to appear
+    if (!form.checkValidity()) {
+        form.reportValidity(); // Show built-in error messages
+        return false; // Stop form from redirecting
     }
 
-    // If everything is valid, you can redirect or show a success message
+    // If no validation errors, proceed with redirection
     window.location.href = "Registration_Successful.html";
 }
+
 
 
 /**
