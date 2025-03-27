@@ -183,9 +183,10 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
-    document.getElementById("myForm").submit();
-    alert("Registration Complete");
-
+   
+   //document.getElementById("myForm").submit();
+   document.getElementById("myForm");
+   alert("Registration complete");
 
 }
 
