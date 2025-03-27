@@ -185,7 +185,7 @@ function validateForm() {
 
     // Check if there are any invalid fields (using custom validity)
     if (document.querySelectorAll(':invalid').length > 0) {
-        alert("Please fix the highlighted errors.");
+       // alert("Please fix the highlighted errors.");
         return false; // Don't proceed further if invalid fields exist
     }
 
