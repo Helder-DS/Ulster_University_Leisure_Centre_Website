@@ -183,14 +183,21 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
+    // // Check if there are any invalid fields (using custom validity)
+    // if (document.querySelectorAll(':invalid').length > 0) {
+    //    // alert("Please fix the highlighted errors.");
+    //     return false; // Don't proceed further if invalid fields exist
+    // }
+
     // Check if there are any invalid fields (using custom validity)
-    if (document.querySelectorAll(':invalid').length > 0) {
-       // alert("Please fix the highlighted errors.");
-        return false; // Don't proceed further if invalid fields exist
-    }
+    if (document.querySelectorAll(':invalid').length = 0) {
+        window.location.href = "Registration_Successful.html";
+     }
+
+    
 
     // If everything is valid, you can redirect or show success message
-    window.location.href = "Registration_Successful.html";
+    //window.location.href = "Registration_Successful.html";
 
    
    
