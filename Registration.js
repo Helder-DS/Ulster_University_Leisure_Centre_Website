@@ -170,9 +170,10 @@ function validateMessage() {
 
 }
 
-// Function to validate the entire form
-function validateForm() {
-    // Call individual validation functions
+function validateForm(event) {
+    event.preventDefault();  // Prevent the default form submission
+
+    // Perform all individual validation checks
     validateTitle();
     validateGender();
     validateFirstName();
@@ -183,28 +184,13 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
-    // If the form passes all validations, redirect to registration successful page
+    // If the form passes validation, redirect to the success page
     if (isFormValid()) {
-        // Redirect to the registration complete page
-        window.location.href = "registration-successful.html";
+        window.location.href = "registration-successful.html";  // This will redirect to the success page
     }
 }
 
-// Helper function to check if the form is valid
-function isFormValid() {
-    // Check if there are any custom validity errors in the form
-    var form = document.getElementById("myForm");
-    for (var i = 0; i < form.elements.length; i++) {
-        if (form.elements[i].validity.valid === false) {
-            return false; // Form is not valid if any field has an error
-        }
-    }
-    return true; // Form is valid if no errors were found
-}
 
-
-
-  
 
 
 /**
