@@ -168,7 +168,6 @@ function validateMessage() {
         messageTextarea.setCustomValidity(""); // Clear custom validity
     }
 
-    document.getElementById("myForm").submit(); // Submit the form
 }
 
 // Function to validate the entire form
@@ -184,17 +183,13 @@ function validateForm() {
     validateEmail();
     validateMessage();
 
+    
 
-      // If there are no validation errors (all custom validity is cleared)
-      if (document.querySelectorAll('input:invalid, select:invalid, textarea:invalid').length === 0) {
-        // Redirect to index.html after successful validation
-        window.location.href = "index.html";  // Redirects to home page
-    }
-
+    alert("Message sent");
 
 }
 
-
+document.getElementById("myForm").submit();
 
 /**
  * JQury functions to increase or decrease size text for accessability
