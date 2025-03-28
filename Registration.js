@@ -107,7 +107,7 @@ function validatePostcode() {
     } else if (trimmedPostcode.length > 10) {
         postcodeInput.setCustomValidity("Postcode cannot exceed 10 characters");
     } else if (!/^[A-Za-z0-9]+$/.test(trimmedPostcode)) {
-        postcodeInput.setCustomValidity("Please Enter a valid Postcode e.g. BT61 7ZZ");
+        postcodeInput.setCustomValidity("Please Enter a valid Postcode e.g. BT617ZZ");
     } else {
         postcodeInput.setCustomValidity(""); // Clear custom validity
     }
