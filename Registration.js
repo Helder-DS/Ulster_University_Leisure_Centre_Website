@@ -127,7 +127,7 @@ function validatePhoneNumber() {
     } else if (trimmedPhoneNumber.length < 7) {
         phoneNumberInput.setCustomValidity("Phone number must have at least 7 digits");
     } else if (trimmedPhoneNumber.length > 15) {
-        phoneNumberInput.setCustomValidity("Phone number cannot exceed 15 characters");
+        phoneNumberInput.setCustomValidity("Phone number cannot exceed 15 digits");
     } else {
         phoneNumberInput.setCustomValidity(""); // Clear custom validity
     }
