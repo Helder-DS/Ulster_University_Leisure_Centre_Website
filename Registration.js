@@ -203,7 +203,7 @@ function validateForm() {
 
 $(document).ready(function(){
     $(".btn1").click(function(){
-         $(".radio-title, .gender-title, .details").animate({
+         $(".radio-title, .gender-title, .details #test").animate({
              fontSize: '16px'
          });
      });
