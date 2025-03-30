@@ -211,7 +211,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".btn2").click(function(){
-         $(".radio-title, .gender-title, .details").animate({
+         $(".radio-title, .gender-title, .details #test").animate({
              fontSize: '17px'
          });
      });
