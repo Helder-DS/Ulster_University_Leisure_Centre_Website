@@ -4,7 +4,7 @@
 $(document).ready(function(){
     $(".btn1").click(function(){
          $(".div6 p").animate({
-             fontSize: '15px'
+             fontSize: '16px'
          });
      });
 });
@@ -12,7 +12,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".btn2").click(function(){
          $(".div6 p").animate({
-             fontSize: '16px'
+             fontSize: '17px'
          });
      });
 });
@@ -20,7 +20,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".btn3").click(function(){
          $(".div6 p").animate({
-             fontSize: '17px'
+             fontSize: '18px'
          });
      });
 });
