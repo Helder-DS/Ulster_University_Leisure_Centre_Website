@@ -114,6 +114,26 @@ function validatePostcode() {
 }
 
 // Function to validate the phone number input
+// function validatePhoneNumber() {
+//     // Get the phone number input element
+//     var phoneNumberInput = document.getElementById("phoneNumber");
+//     var trimmedPhoneNumber = phoneNumberInput.value.trim();
+
+//     // Validate the phone number based on various conditions
+//     if (trimmedPhoneNumber === "") {
+//         phoneNumberInput.setCustomValidity("Please enter your phone number");
+//     } else if (!/^[0-9 ()+-]+$/.test(trimmedPhoneNumber)) {
+//         phoneNumberInput.setCustomValidity("Invalid characters in phone number");
+//     } else if (trimmedPhoneNumber.length < 7) {
+//         phoneNumberInput.setCustomValidity("Phone number must have at least 7 digits");
+//     } else if (trimmedPhoneNumber.length > 15) {
+//         phoneNumberInput.setCustomValidity("Phone number cannot exceed 15 digits");
+//     } else {
+//         phoneNumberInput.setCustomValidity(""); // Clear custom validity
+//     }
+// }
+
+// Function to validate the phone number input
 function validatePhoneNumber() {
     // Get the phone number input element
     var phoneNumberInput = document.getElementById("phoneNumber");
@@ -122,8 +142,10 @@ function validatePhoneNumber() {
     // Validate the phone number based on various conditions
     if (trimmedPhoneNumber === "") {
         phoneNumberInput.setCustomValidity("Please enter your phone number");
-    } else if (!/^[0-9 ()+-]+$/.test(trimmedPhoneNumber)) {
+    } else if (!/^[0-9 ()+.-]*$/.test(trimmedPhoneNumber)) {  // Allow only valid phone number characters
         phoneNumberInput.setCustomValidity("Invalid characters in phone number");
+    } else if (trimmedPhoneNumber.startsWith("-")) { // Check if the phone number starts with a negative sign
+        phoneNumberInput.setCustomValidity("Phone number cannot start with a negative sign");
     } else if (trimmedPhoneNumber.length < 7) {
         phoneNumberInput.setCustomValidity("Phone number must have at least 7 digits");
     } else if (trimmedPhoneNumber.length > 15) {
@@ -132,6 +154,7 @@ function validatePhoneNumber() {
         phoneNumberInput.setCustomValidity(""); // Clear custom validity
     }
 }
+
 
 // Function to validate the email input
 function validateEmail() {
